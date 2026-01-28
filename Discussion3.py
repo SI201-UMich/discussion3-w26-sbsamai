@@ -47,7 +47,7 @@ def main():
     print("Area:", r1.area_calculator())
 
 
-    r2 = Rectangle(10, 15)
+    r2 = Rectangle(100, 15)
     print(r2)
     print("Area:", r2.area_calculator())
     # call the __eq__ method
