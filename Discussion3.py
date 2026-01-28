@@ -2,8 +2,8 @@ import math
 
 class Rectangle():
     # Create the constructor "__init__" method
-    def __init__(self, length, width):
-        self.length = length
+    def __init__(self, height, width):
+        self.height = height
         self.width = width
     # YOUR CODE HERE
 
@@ -13,14 +13,15 @@ class Rectangle():
 
     # YOUR CODE HERE
     def __str__(self): 
-        return str("A rectangle with " + self.width + "and" + self.length)
+        return str("A rectangle with " + str(self.width) + " and " + str(self.height))
+    
 
 
     # Create the "area_calculator" method
 
     # YOUR CODE HERE
     def area_calculator(self):
-        return self.length * self.width
+        return self.height * self.width
 
 
 
@@ -28,7 +29,7 @@ class Rectangle():
     # 
     def __eq__(self, other):
     # Returns a boolean value
-        if self.width == other.width and self.length == other.length:
+        if self.width == other.width and self.height == other.height:
             return True
         else:
             return False
