@@ -13,22 +13,25 @@ class Rectangle():
 
     # YOUR CODE HERE
     def __str__(self): 
-        return f"Rectangle(length = {self.length}, width = {self.width})"
+        return str("A rectangle with " + self.width + "and" + self.length)
 
 
     # Create the "area_calculator" method
 
     # YOUR CODE HERE
     def area_calculator(self):
-        self.length * self.width
+        return self.length * self.width
 
 
 
     # Create the "__eq__" method
     # 
-    def __eq__(self,)
+    def __eq__(self, other):
     # Returns a boolean value
-
+        if self.width == other.width and self.length == other.length:
+            return True
+        else:
+            return False
     # YOUR CODE HERE
 
 
